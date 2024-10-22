@@ -1,0 +1,32 @@
+package setpro;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+//Convert the below list in to set(use addAll()) method
+//Input : List = 10,20,30,90,10,10,40,50
+public class LinkedHash {
+public static void main(String[] args) {
+	List<Integer> l=new ArrayList<Integer>();
+	l.add(10);
+	l.add(20);
+	l.add(30);
+	l.add(90);
+	l.add(10);
+	l.add(10);
+	l.add(40);
+	l.add(50);
+	System.out.println(l);
+	System.out.println(l.size());
+	Set<Integer> s=new HashSet<Integer>();
+	boolean addAll = s.addAll(l);
+	System.out.println(addAll);
+	System.out.println(s);
+	l.remove(4);
+	System.out.println(l);
+	l.clear();
+	System.out.println(l);
+}
+}
